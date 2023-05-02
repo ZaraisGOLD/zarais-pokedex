@@ -1,0 +1,133 @@
+.pokemon {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 0.8em;
+  overflow: hidden;
+  border: 0.5em solid rgb(180, 180, 180);
+  transition: transform 100ms ease;
+}
+
+.pokemon:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.border-grass {
+  border-color: green;
+}
+
+.border-water {
+  border-color: blue;
+}
+
+.border-fire {
+  border-color: orangered;
+}
+
+.pokemon__header {
+  background-color: rgb(180, 180, 180);
+  height: 180px;
+  position: relative;
+}
+
+.bg-grass {
+  background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+.bg-fire {
+  background-image: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.bg-water {
+  background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+.pokemon__sprite {
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pokemon__body {
+  padding: 1em;
+  padding-top: 70px;
+}
+
+.pokemon__name {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokemon__types {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.pokemon__types--specific {
+  text-transform: capitalize;
+}
+
+.pokemon__types--specific:nth-child(2) {
+  position: relative;
+}
+
+.pokemon__types--specific:nth-child(2)::before {
+  content: '/';
+  position: absolute;
+  left: -1em;
+}
+
+.pokemon__types--specific:nth-child(3) {
+  position: relative;
+}
+
+.pokemon__types--specific:nth-child(3)::before {
+  content: '/';
+  position: absolute;
+  left: -1em;
+}
+
+.pokemon__stats {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  font-size: 0.6rem;
+  gap: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.pokemom__stats--specific {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.pokemon__stats--label {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.pokemon__stats--value {
+  font-size: 1rem;
+}
+
+.color-grass {
+  color: green;
+}
+
+.color-water {
+  color: blue;
+}
+
+.color-fire {
+  color: orangered;
+}
+
+
+
+
