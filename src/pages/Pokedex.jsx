@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import FormPoke from '../components/Pokedex/FormPoke'
 import PokeContainer from '../components/Pokedex/PokeContainer'
+import './styles/pokedex.css'
 
 const Pokedex = () => {
 
-  const urlMain = 'https://pokeapi.co/api/v2/pokemon?limit=10000000&offset=0'
+  const urlMain = 'https://pokeapi.co/api/v2/pokemon?limit=999999999999&offset=0'
 
   const [formUrl, setFormUrl] = useState(urlMain)
 

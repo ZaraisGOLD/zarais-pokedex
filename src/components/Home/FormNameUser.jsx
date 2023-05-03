@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { setTrainerName } from '../../store/slices/trainerName.slice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import './styles/formNameUser.css'
 
 const FormNameUser = () => {
 
@@ -18,9 +19,11 @@ const FormNameUser = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input ref={inputName} type="text" />
-      <button>Start</button>
+    <form onSubmit={handleSubmit} className='home__form'>
+      <input className='home__input' ref={inputName} type="text" placeholder='Your name is ...' />
+      <button className='home__button'>Start
+        <span className='home__button--img'><img src="./Pokebola.png" alt="" /></span>
+      </button>
     </form>
   )
 }

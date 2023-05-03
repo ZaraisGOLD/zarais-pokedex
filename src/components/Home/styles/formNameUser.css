@@ -1,0 +1,40 @@
+.home__form {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.home__input,
+.home__button {
+  font-size: 1.2rem;
+  border: 2.5px solid #000000;
+}
+
+.home__input {
+  width: 100%;
+  background-color: #ffffff;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+
+.home__button {
+  width: fit-content;
+  background-color: transparent;
+  color: inherit;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  padding: 0.3em;
+}
+
+.home__button--img {
+  width: 25px;
+}
