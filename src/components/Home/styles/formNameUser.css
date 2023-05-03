@@ -13,7 +13,7 @@
 }
 
 .home__input {
-  width: 100%;
+  width: 80%;
   background-color: #ffffff;
   border-right: none;
   border-top-left-radius: 20px;
@@ -22,7 +22,7 @@
 }
 
 .home__button {
-  width: fit-content;
+  width: 130px;
   background-color: transparent;
   color: inherit;
   border-top-right-radius: 20px;
@@ -31,10 +31,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3em;
+  gap: 0.5em;
   padding: 0.3em;
 }
 
 .home__button--img {
   width: 25px;
+  transition: transform 3s;
+  animation: rotate-animation 5s infinite linear;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
