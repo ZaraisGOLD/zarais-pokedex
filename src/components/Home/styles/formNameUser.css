@@ -9,7 +9,7 @@
 .home__input,
 .home__button {
   font-size: 1.2rem;
-  border: 2.5px solid #000000;
+  border: 3px solid #000000;
 }
 
 .home__input {
@@ -18,7 +18,8 @@
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  text-align: center;
+  text-align: left;
+  text-indent: 1em;
 }
 
 .home__button {

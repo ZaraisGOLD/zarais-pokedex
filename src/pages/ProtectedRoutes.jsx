@@ -10,10 +10,12 @@ const ProtectedRoutes = () => {
 
   if (trainerName.length >= 3) {
     return <Outlet />
+
   } else {
-    // return <Navigate to ='/' />
-    navigate('/')
+    return <Navigate to ='/' />
+    // return navigate('/')
   }
+
 }
 
 export default ProtectedRoutes

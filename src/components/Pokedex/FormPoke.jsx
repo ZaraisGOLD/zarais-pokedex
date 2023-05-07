@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
 
@@ -15,10 +15,9 @@ const FormPoke = ({ setFormUrl, urlMain }) => {
     getTypes()
   }, [])
 
-
   const handleSubmit = e => {
     e.preventDefault()
-    const path = `/pokedex/${navigate(inputPoke.current.value.trim().toLowerCase())}`
+    const path = `/pokedex/${inputPoke.current.value.trim().toLowerCase()}`
     navigate(path)
   }
 

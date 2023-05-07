@@ -11,11 +11,11 @@ const PokeCard = ({ url }) => {
     getPokeById()
   }, [])
 
-const navigate = useNavigate()
+  const navigate = useNavigate()
 
-const handleClick = () => {
-  navigate(`/pokedex/${pokemon.name}`)
-}
+  const handleClick = () => {
+    navigate(`/pokedex/${pokemon.name}`)
+  }
 
   return (
     <article onClick={handleClick} className={`pokemon border-${pokemon?.types[0].type.name}`}>
