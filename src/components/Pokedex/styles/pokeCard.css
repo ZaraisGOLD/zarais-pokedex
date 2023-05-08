@@ -1,82 +1,224 @@
 .pokemon {
-  width: 100%;
-  max-width: 350px;
+  width: 300px;
+  height: 450px;
+  border: 0.5em solid transparent;
   border-radius: 0.8em;
   overflow: hidden;
-  border: 0.5em solid rgb(180, 180, 180);
-  transition: transform 100ms ease;
+  transition: transform 250ms ease;
 }
 
 .pokemon:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-.border-grass {
-  border-color: green;
+.border-bug {
+  background: linear-gradient(130deg, rgba(121, 205, 141, 1) 0%, rgba(28, 75, 39, 1) 20%, rgba(121, 205, 141, 1) 40%, rgba(28, 75, 39, 1) 60%, rgba(121, 205, 141, 1) 80%, rgba(28, 75, 39, 1) 100%) border-box;
 }
 
-.border-water {
-  border-color: blue;
+.border-dark,
+.border-shadow {
+  background: linear-gradient(130deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 80%, rgba(0, 0, 0, 1) 100%) border-box;
+}
+
+.border-dragon {
+  background: linear-gradient(130deg, rgba(187, 233, 239, 1) 0%, rgba(40, 149, 164, 1) 20%, rgba(187, 233, 239, 1) 40%, rgba(40, 149, 164, 1) 60%, rgba(187, 233, 239, 1) 80%, rgba(40, 149, 164, 1) 100%) border-box;
+}
+
+.border-electric {
+  background: linear-gradient(130deg, rgba(255, 255, 217, 1) 0%, rgba(191, 144, 0, 1) 20%, rgba(255, 255, 217, 1) 40%, rgba(191, 144, 0, 1) 60%, rgba(255, 255, 217, 1) 80%, rgba(191, 144, 0, 1) 100%) border-box;
+}
+
+.border-fairy {
+  background: linear-gradient(130deg, rgba(233, 169, 204, 1) 0%, rgba(165, 40, 107, 1) 20%, rgba(233, 169, 204, 1) 40%, rgba(165, 40, 107, 1) 60%, rgba(233, 169, 204, 1) 80%, rgba(165, 40, 107, 1) 100%) border-box;
+}
+
+.border-fighting {
+  background: linear-gradient(130deg, rgba(235, 186, 169, 1) 0%, rgba(226, 97, 54, 1) 20%, rgba(235, 186, 169, 1) 40%, rgba(226, 97, 54, 1) 60%, rgba(235, 186, 169, 1) 80%, rgba(226, 97, 54, 1) 100%) border-box;
 }
 
 .border-fire {
-  border-color: orangered;
+  background: linear-gradient(130deg, rgba(255, 244, 160, 1) 0%, rgba(255, 0, 0, 1) 20%, rgba(255, 244, 160, 1) 40%, rgba(255, 0, 0, 1) 60%, rgba(255, 244, 160, 1) 80%, rgba(255, 0, 0, 1) 100%) border-box;
+}
+
+.border-flying {
+  background: linear-gradient(130deg, rgba(181, 202, 217, 1) 0%, rgba(74, 103, 125, 1) 20%, rgba(181, 202, 217, 1) 40%, rgba(74, 103, 125, 1) 60%, rgba(181, 202, 217, 1) 80%, rgba(74, 103, 125, 1) 100%) border-box;
+}
+
+.border-ghost {
+  background: linear-gradient(130deg, rgba(204, 184, 204, 1) 0%, rgba(51, 51, 107, 1) 20%, rgba(204, 184, 204, 1) 40%, rgba(51, 51, 107, 1) 60%, rgba(204, 184, 204, 1) 80%, rgba(51, 51, 107, 1) 100%) border-box;
+}
+
+.border-grass {
+  background: linear-gradient(130deg, rgba(188, 242, 201, 1) 0%, rgba(39, 203, 80, 1) 20%, rgba(188, 242, 201, 1) 40%, rgba(39, 203, 80, 1) 60%, rgba(188, 242, 201, 1) 80%, rgba(39, 203, 80, 1) 100%) border-box;
+}
+
+.border-ground {
+  background: linear-gradient(130deg, rgba(230, 199, 162, 1) 0%, rgba(168, 112, 45, 1) 20%, rgba(230, 199, 162, 1) 40%, rgba(168, 112, 45, 1) 60%, rgba(230, 199, 162, 1) 80%, rgba(168, 112, 45, 1) 100%) border-box;
+}
+
+.border-ice {
+  background: linear-gradient(130deg, rgba(255, 255, 255, 1) 0%, rgba(134, 210, 245, 1) 20%, rgba(255, 255, 255, 1) 40%, rgba(134, 210, 245, 1) 60%, rgba(255, 255, 255, 1) 80%, rgba(134, 210, 245, 1) 100%) border-box;
+}
+
+.border-normal {
+  background: linear-gradient(130deg, rgba(215, 177, 188, 1) 0%, rgba(142, 101, 112, 1) 20%, rgba(215, 177, 188, 1) 40%, rgba(142, 101, 112, 1) 60%, rgba(215, 177, 188, 1) 80%, rgba(142, 101, 112, 1) 100%) border-box;
+}
+
+.border-poison {
+  background: linear-gradient(130deg, rgba(197, 166, 226, 1) 0%, rgba(94, 45, 137, 1) 20%, rgba(197, 166, 226, 1) 40%, rgba(94, 45, 137, 1) 60%, rgba(197, 166, 226, 1) 80%, rgba(94, 45, 137, 1) 100%) border-box;
+}
+
+.border-psychic {
+  background: linear-gradient(130deg, rgba(255, 204, 255, 1) 0%, rgba(215, 111, 165, 1) 20%, rgba(255, 204, 255, 1) 40%, rgba(215, 111, 165, 1) 60%, rgba(255, 204, 255, 1) 80%, rgba(215, 111, 165, 1) 100%) border-box;
+}
+
+.border-rock {
+  background: linear-gradient(130deg, rgba(230, 199, 162, 1) 0%, rgba(72, 25, 11, 1) 20%, rgba(230, 199, 162, 1) 40%, rgba(72, 25, 11, 1) 60%, rgba(230, 199, 162, 1) 80%, rgba(72, 25, 11, 1) 100%) border-box;
+}
+
+.border-steel {
+  background: linear-gradient(130deg, rgba(242, 242, 242, 1) 0%, rgba(96, 117, 110, 1) 20%, rgba(242, 242, 242, 1) 40%, rgba(96, 117, 110, 1) 60%, rgba(242, 242, 242, 1) 80%, rgba(96, 117, 110, 1) 100%) border-box;
+}
+
+.border-unknown {
+  background: linear-gradient(130deg, rgba(217, 217, 217, 1) 0%, rgba(118, 113, 113, 1) 20%, rgba(217, 217, 217, 1) 40%, rgba(118, 113, 113, 1) 60%, rgba(217, 217, 217, 1) 80%, rgba(118, 113, 113, 1) 100%) border-box;
+}
+
+.border-water {
+  background: linear-gradient(130deg, rgba(133, 168, 251, 1) 0%, rgba(21, 82, 225, 1) 20%, rgba(133, 168, 251, 1) 40%, rgba(21, 82, 225, 1) 60%, rgba(133, 168, 251, 1) 80%, rgba(21, 82, 225, 1) 100%) border-box;
 }
 
 .pokemon__header {
   background-color: rgb(180, 180, 180);
-  height: 180px;
+  height: 32%;
   position: relative;
 }
 
-.bg-grass {
-  background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+.bg-bug {
+  background: radial-gradient(circle, rgba(121, 205, 141, 1) 0%, rgba(57, 153, 80, 1) 30%, rgba(28, 75, 39, 1) 70%);
+}
+
+.bg-dark,
+.bg-shadow {
+  background: radial-gradient(circle, rgba(127, 127, 127, 1) 0%, rgba(59, 56, 56, 1) 30%, rgba(0, 0, 0, 1) 70%);
+}
+
+.bg-dragon {
+  background: radial-gradient(circle, rgba(187, 233, 239, 1) 0%, rgba(98, 202, 217, 1) 30%, rgba(68, 138, 149, 1) 70%);
+}
+
+.bg-electric {
+  background: radial-gradient(circle, rgba(255, 255, 217, 1) 0%, rgba(255, 255, 129, 1) 30%, rgba(191, 144, 0, 1) 70%);
+}
+
+.bg-fairy {
+  background: radial-gradient(circle, rgba(233, 169, 204, 1) 0%, rgba(210, 78, 150, 1) 30%, rgba(165, 42, 108, 1) 70%);
+}
+
+.bg-fighting {
+  background: radial-gradient(circle, rgba(217, 133, 105, 1) 0%, rgba(187, 97, 69, 1) 30%, rgba(154, 67, 38, 1) 70%);
 }
 
 .bg-fire {
-  background-image: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  background: radial-gradient(circle, rgba(244, 195, 154, 1) 0%, rgba(228, 113, 32, 1) 30%, rgba(255, 0, 0, 1) 70%);
+}
+
+.bg-flying {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(148, 178, 199, 1) 30%, rgba(74, 103, 125, 1) 70%);
+}
+
+.bg-ghost {
+  background: radial-gradient(circle, rgba(119, 119, 191, 1) 0%, rgba(72, 72, 154, 1) 30%, rgba(50, 50, 107, 1) 70%);
+}
+
+.bg-grass {
+  background: radial-gradient(circle, rgba(164, 238, 182, 1) 0%, rgb(107, 224, 135) 30%, rgb(38, 190, 76) 70%);
+}
+
+.bg-ground {
+  background: radial-gradient(circle, rgba(230, 199, 162, 1) 0%, rgba(211, 156, 89, 1) 30%, rgba(168, 112, 45, 1) 70%);
+}
+
+.bg-ice {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(177, 227, 249, 1) 30%, rgba(134, 210, 245, 1) 70%);
+}
+
+.bg-normal {
+  background: radial-gradient(circle, rgba(210, 172, 183, 1) 0%, rgba(181, 138, 149, 1) 30%, rgba(146, 104, 115, 1) 70%);
+}
+
+.bg-poison {
+  background: radial-gradient(circle, rgba(197, 166, 226, 1) 0%, rgba(149, 91, 201, 1) 30%, rgba(94, 45, 137, 1) 70%);
+}
+
+.bg-psychic {
+  background: radial-gradient(circle, rgba(255, 204, 255, 1) 0%, rgba(241, 159, 202, 1) 30%, rgba(215, 111, 165, 1) 70%);
+}
+
+.bg-rock {
+  background: radial-gradient(circle, rgba(240, 178, 158, 1) 0%, rgba(217, 77, 33, 1) 30%, rgba(72, 25, 11, 1) 70%);
+}
+
+.bg-steel {
+  background: radial-gradient(circle, rgba(236, 236, 236, 1) 0%, rgba(135, 157, 150, 1) 30%, rgba(96, 117, 110, 1) 70%);
+}
+
+.bg-unknown {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 30%, rgba(127, 127, 127, 1) 70%);
 }
 
 .bg-water {
-  background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  background: radial-gradient(circle, rgba(181, 202, 253, 1) 0%, rgba(105, 147, 241, 1) 50%, rgba(21, 82, 225, 1) 100%);
 }
 
 .pokemon__sprite {
-  width: 60%;
+  width: 55%;
+  height: 110%;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .pokemon__body {
+  background-color: white;
+  color: black;
+  height: 68%;
   padding: 1em;
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .pokemon__name {
   font-size: 1.5rem;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 0.5em;
 }
 
 .pokemon__types {
   display: flex;
-  gap: 2em;
   justify-content: center;
+  gap: 2em;
+  padding-top: 1em;
+  padding-bottom: 0.8em;
 }
 
 .pokemon__types--specific {
+  color: #404040;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5em;
   text-transform: capitalize;
 }
 
 .pokemon__types--specific:nth-child(2) {
+  flex-direction: row;
   position: relative;
 }
 
 .pokemon__types--specific:nth-child(2)::before {
-  content: '/';
+  content: '|';
   position: absolute;
   left: -1em;
 }
@@ -86,48 +228,198 @@
 }
 
 .pokemon__types--specific:nth-child(3)::before {
-  content: '/';
+  content: '|';
   position: absolute;
   left: -1em;
 }
 
+.pokemon__types--img {
+  width: 1.5em;
+  object-fit: contain;
+}
+
+.pokemon__hr {
+  width: 100%;
+  height: 2px;
+  border-radius: 100%;
+}
+
+.hr-bug {
+  background: linear-gradient(90deg, rgba(121, 205, 141, 0) 0%, rgba(121, 205, 141, 0.5) 25%, rgba(28, 75, 39, 0.5) 50%, rgba(121, 205, 141, 0.5) 75%, rgba(121, 205, 141, 0) 100%);
+}
+
+.hr-dark,
+.hr-shadow {
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0) 0%, rgba(242, 242, 242, 0.5) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(242, 242, 242, 0.5) 75%, rgba(242, 242, 242, 0) 100%);
+}
+
+.hr-dragon {
+  background: linear-gradient(90deg, rgba(98, 202, 217, 0) 0%, rgba(98, 202, 217, 0.5) 25%, rgba(40, 149, 164, 0.5) 50%, rgba(98, 202, 217, 0.5) 75%, rgba(98, 202, 217, 0) 100%);
+}
+
+.hr-electric {
+  background: linear-gradient(90deg, rgba(255, 255, 217, 0) 0%, rgba(255, 255, 217, 0.5) 25%, rgba(191, 144, 0, 0.5) 50%, rgba(255, 255, 217, 0.5) 75%, rgba(255, 255, 217, 0) 100%);
+}
+
+.hr-fairy {
+  background: linear-gradient(90deg, rgba(233, 169, 204, 0) 0%, rgba(233, 169, 204, 0.5) 25%, rgba(165, 40, 107, 0.5) 50%, rgba(233, 169, 204, 0.5) 75%, rgba(233, 169, 204, 0) 100%);
+}
+
+.hr-fighting {
+  background: linear-gradient(90deg, rgba(217, 133, 105, 0) 0%, rgba(217, 133, 105, 0.5) 25%, rgba(154, 67, 38, 0.5) 50%, rgba(217, 133, 105, 0.5) 75%, rgba(217, 133, 105, 0) 100%);
+}
+
+.hr-fire {
+  background: linear-gradient(90deg, rgba(255, 244, 160, 0) 0%, rgba(255, 244, 160, 0.5) 25%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 244, 160, 0.5) 75%, rgba(255, 244, 160, 0) 100%);
+}
+
+.hr-flying {
+  background: linear-gradient(90deg, rgba(148, 178, 199, 0) 0%, rgba(148, 178, 199, 0.5) 25%, rgba(74, 103, 125, 0.5) 50%, rgba(148, 178, 199, 0.5) 75%, rgba(148, 178, 199, 0) 100%);
+}
+
+.hr-ghost {
+  background: linear-gradient(90deg, rgba(163, 128, 164, 0) 0%, rgba(163, 128, 164, 0.5) 25%, rgba(51, 51, 107, 0.5) 50%, rgba(163, 128, 164, 0.5) 75%, rgba(163, 128, 164, 0) 100%);
+}
+
+.hr-grass {
+  background: linear-gradient(90deg, rgba(39, 203, 80, 0) 0%, rgba(39, 203, 80, 0.5) 25%, rgba(20, 123, 61, 0.5) 50%, rgba(39, 203, 80, 0.5) 75%, rgba(39, 203, 80, 0) 100%);
+}
+
+.hr-ground {
+  background: linear-gradient(90deg, rgba(230, 199, 162, 0) 0%, rgba(230, 199, 162, 0.5) 25%, rgba(168, 112, 45, 0.5) 50%, rgba(230, 199, 162, 0.5) 75%, rgba(230, 199, 162, 0) 100%);
+}
+
+.hr-ice {
+  background: linear-gradient(90deg, rgba(177, 227, 249, 0) 0%, rgba(177, 227, 249, 0.5) 25%, rgba(134, 210, 245, 0.5) 50%, rgba(177, 227, 249, 0.5) 75%, rgba(177, 227, 249, 0) 100%);
+}
+
+.hr-normal {
+  background: linear-gradient(90deg, rgba(193, 154, 165, 0) 0%, rgba(193, 154, 165, 0.5) 25%, rgba(145, 104, 115, 0.5) 50%, rgba(193, 154, 165, 0.5) 75%, rgba(193, 154, 165, 0) 100%);
+}
+
+.hr-poison {
+  background: linear-gradient(90deg, rgba(197, 166, 226, 0) 0%, rgba(197, 166, 226, 0.5) 25%, rgba(94, 45, 137, 0.5) 50%, rgba(197, 166, 226, 0.5) 75%, rgba(197, 166, 226, 0) 100%);
+}
+
+.hr-psychic {
+  background: linear-gradient(90deg, rgba(255, 204, 255, 0) 0%, rgba(255, 204, 255, 0.5) 25%, rgba(215, 111, 165, 0.5) 50%, rgba(255, 204, 255, 0.5) 75%, rgba(255, 204, 255, 0) 100%);
+}
+
+.hr-rock {
+  background: linear-gradient(90deg, rgba(185, 82, 45, 0) 0%, rgba(185, 82, 45, 0.5) 25%, rgba(72, 25, 11, 0.5) 50%, rgba(185, 82, 45, 0.5) 75%, rgba(185, 82, 45, 0) 100%);
+}
+
+.hr-steel {
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0) 0%, rgba(242, 242, 242, 0.5) 25%, rgba(96, 117, 110, 0.5) 50%, rgba(242, 242, 242, 0.5) 75%, rgba(242, 242, 242, 0) 100%);
+}
+
+.hr-unknown {
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0) 0%, rgba(242, 242, 242, 0.5) 25%, rgba(127, 127, 127, 0.5) 50%, rgba(242, 242, 242, 0.5) 75%, rgba(242, 242, 242, 0) 100%);
+}
+
+.hr-water {
+  background: linear-gradient(90deg, rgba(133, 168, 251, 0) 0%, rgba(133, 168, 251, 0.5) 25%, rgba(21, 82, 225, 0.5) 50%, rgba(133, 168, 251, 0.5) 75%, rgba(133, 168, 251, 0) 100%);
+}
+
 .pokemon__stats {
+  color: #404040;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 70px);
+  justify-content: center;
   font-size: 0.6rem;
-  gap: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  gap: 1.5em;
+  padding-top: 1em;
 }
 
 .pokemom__stats--specific {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em;
+  justify-content: space-between;
 }
 
 .pokemon__stats--label {
-  font-weight: 200;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .pokemon__stats--value {
   font-size: 1rem;
 }
 
-.color-grass {
-  color: green;
+.color-bug {
+  color: #1c4b27;
 }
 
-.color-water {
-  color: blue;
+.color-dark,
+.color-shadow {
+  color: #000000;
+}
+
+.color-dragon {
+  color: #448a95;
+}
+
+.color-electric {
+  color: #9b8338;
+}
+
+.color-fairy {
+  color: #a5286b;
+}
+
+.color-fighting {
+  color: #9a4326;
 }
 
 .color-fire {
-  color: orangered;
+  color: #8e0000;
 }
 
+.color-flying {
+  color: #4a677d;
+}
 
+.color-ghost {
+  color: #33336b;
+}
 
+.color-grass {
+  color: #147b3d;
+}
 
+.color-ground {
+  color: #6e491f;
+}
+
+.color-ice {
+  color: #64c6f2;
+}
+
+.color-normal {
+  color: #8e6570;
+}
+
+.color-poison {
+  color: #5e2d89;
+}
+
+.color-psychic {
+  color: #d76fa5;
+}
+
+.color-rock {
+  color: #8b3e22;
+}
+
+.color-steel {
+  color: #60756e;
+}
+
+.color-unknown {
+  color: #767171;
+}
+
+.color-water {
+  color: #1552e1;
+}

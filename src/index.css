@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
   font-family: 'RocknRoll One', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #346fdd;
+  border-radius: 20px;
 }
 
 body {
   margin: 0;
 }
 
-h1, h2, h3, h4, p, ul {
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -32,8 +49,14 @@ button {
 }
 
 select {
+  /* appearance: none; */
   font-family: inherit;
 }
+
+select::-ms-expand {
+  display: none;
+}
+
 img {
   width: 100%;
   display: block;

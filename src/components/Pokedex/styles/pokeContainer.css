@@ -1,23 +1,41 @@
-.poke__container {
-  /* display: flex; */
+.poke__paginate {
+  display: flex;
+  justify-content: space-around;
 }
 
 .pagination-container {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 0.5em;
-  padding: 1em;
+  align-items: center;
+  gap: 0.4em;
+  padding: 1em 2em;
+}
+
+
+.active-pageli {
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 0 0.2em;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .active-page {
-  /* border: ; */
+  color: #346fdd;
+  font-size: 1rem;
 }
 
-.active-pageli {
-  width: fit-content;
-  border: 1px solid black;
-  padding: 0.2em;
-  text-align: center;
-  cursor: pointer;
+.disabled-page {
+  display: none;
+}
+
+.poke__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 2em;
+  padding: 1em 5em;
 }

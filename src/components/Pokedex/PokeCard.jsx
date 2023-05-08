@@ -27,10 +27,13 @@ const PokeCard = ({ url }) => {
         <ul className='pokemon__types'>
           {
             pokemon?.types.map(type => (
-              <li className='pokemon__types--specific' key={type.type.url}>{type.type.name}</li>
+              <li className='pokemon__types--specific' key={type.type.url}>{type.type.name}
+              <img className='pokemon__types--img' src={`./${type.type.name}.png`} alt="" />
+              </li>
             ))
           }
         </ul>
+        <div className={`pokemon__hr hr-${pokemon?.types[0].type.name}`}></div>
         <ul className='pokemon__stats'>
           {
             pokemon?.stats.map(stat => (
