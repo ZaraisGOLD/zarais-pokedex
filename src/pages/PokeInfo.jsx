@@ -15,14 +15,12 @@ const PokeInfo = () => {
     getPokeByName()
   }, [name])
 
-  console.log(pokemon);
-
   return (
     <div>
       {
         hasError
           ? <div className='pokemon__error'>
-            <h1><img className='pokemon__errorImg' src="https://pm1.narvii.com/6706/03db65a4afca1570ffcc2bc338a5873c1716af44_00.jpg" alt="" />This pokemon not exist!</h1>
+            <h1 className='pokemon__errorH1'><img className='pokemon__errorImg' src="/Pikachu Mejorado.png" alt="" />This pokemon not exist!</h1>
           </div>
           : <>
             <div className='pokemon__info--container'>
