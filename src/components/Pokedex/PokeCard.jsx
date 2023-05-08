@@ -28,7 +28,7 @@ const PokeCard = ({ url }) => {
           {
             pokemon?.types.map(type => (
               <li className='pokemon__types--specific' key={type.type.url}>{type.type.name}
-              <img className='pokemon__types--img' src={`./${type.type.name}.png`} alt="" />
+                <img className='pokemon__types--img' src={`./${type.type.name}.png`} alt="" />
               </li>
             ))
           }

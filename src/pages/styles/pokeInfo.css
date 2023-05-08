@@ -1,0 +1,27 @@
+.pokemon__error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 5em 10em;
+  text-align: center;
+}
+
+.pokemon__errorImg {
+  width: 80%;
+  min-width: 300px;
+  height: 80%;
+  margin: auto;
+}
+
+.pokemon__info--container {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(223, 39, 52, 1) 5%, rgba(223, 39, 52, 1) 95%, rgba(0, 0, 0, 1) 100%);
+  width: 100%;
+  height: 100vh;
+  padding: 3em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
