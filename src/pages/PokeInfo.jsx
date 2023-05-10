@@ -16,39 +16,61 @@ const PokeInfo = () => {
   }, [name])
 
   return (
-    <div>
+    <div className='pokeInfo'>
       {
         hasError
           ? <div className='pokemon__error'>
             <h1 className='pokemon__errorH1'><img className='pokemon__errorImg' src="/Pikachu Mejorado.png" alt="" />This pokemon not exist!</h1>
           </div>
           : <>
-            <div className='pokemon__info--container'>
-              <article className={`pokemon border-${pokemon?.types[0].type.name}`}>
-                <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
-                  <img className='pokemon__sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+            <div className='poke__info--container'>
+              <article className={`poke__info border-${pokemon?.types[0].type.name}`}>
+                <header className={`poke__header bg-${pokemon?.types[0].type.name}`}>
+                  <img className='poke__sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
                 </header>
-                <section className='pokemon__body'>
-                  <h3 className={`pokemon__name color-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
-                  <ul className='pokemon__types'>
+                <section className='poke__body'>
+                  <h3 className={`poke__name color-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
+                  <div className={`poke__hr hr-${pokemon?.types[0].type.name}`}></div>
+                  <ul className='poke__types'>
                     {
                       pokemon?.types.map(type => (
-                        <li className='pokemon__types--specific' key={type.type.url}>{type.type.name}
-                          <img className='pokemon__types--img' src={`./${type.type.name}.png`} alt="" />
+                        <li className='poke__types--specific' key={type.type.url}>{type.type.name}
+                          <img className='poke__types--img' src={`./${type.type.name}.png`} alt="" />
                         </li>
                       ))
                     }
                   </ul>
-                  <div className={`pokemon__hr hr-${pokemon?.types[0].type.name}`}></div>
-                  <ul className='pokemon__stats'>
+                  <div className='poke__data'>
+                    <div className='poke__data--container'>
+                      <span className='poke__data--title'>Weight</span>
+                      <span className={`poke__data--value color-${pokemon?.types[0].type.name}`}>{pokemon?.weight}</span>
+                    </div>
+                    <div className='poke__data--container'>
+                      <span className='poke__data--title'>Height</span>
+                      <span className={`poke__data--value color-${pokemon?.types[0].type.name}`}>{pokemon?.height}</span>
+                    </div>
+                  </div>
+                  <ul className='poke__stats'>
                     {
                       pokemon?.stats.map(stat => (
-                        <li className='pokemom__stats--specific' key={stat.stat.url}>
-                          <span className='pokemon__stats--label'>{stat.stat.name}</span>
-                          <span className={`pokemon__stats--value color-${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
+                        <li className='poke_stats--specific' key={stat.stat.url}>
+                          <span className='poke__stats--label'>{stat.stat.name}</span>
+                          <span className={`poke__stats--value color-${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
                         </li>
                       ))
                     }
+                  </ul>
+                  <ul className='poke__moves'>
+                    <h3 className='poke__moves--title'>Moves</h3>
+                    <div className='poke__moves--specific'>
+                      {
+                        pokemon?.moves.map(move => (
+                          <li className='poke__move' key={move.move.url}>
+                            <span>{move.move.name}</span>
+                          </li>
+                        ))
+                      }
+                    </div>
                   </ul>
                 </section>
               </article>

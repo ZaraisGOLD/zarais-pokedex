@@ -1,3 +1,7 @@
+.pokeContainer__body {
+  background-color: transparent;
+}
+
 .poke__paginate {
   display: flex;
   justify-content: space-around;

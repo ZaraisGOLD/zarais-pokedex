@@ -27,7 +27,7 @@ const PokeContainer = ({ formUrl }) => {
   };
 
   return (
-    <div className='poke__body'>
+    <div className='pokeContainer__body'>
       <div className='poke__paginate'>
         <ReactPaginate
           pageCount={totalPage}
